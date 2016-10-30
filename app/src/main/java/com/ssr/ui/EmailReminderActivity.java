@@ -18,6 +18,7 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.ssr.bl.EmailReminder;
 import com.ssr.bl.SmsReminder;
 
 import java.util.Calendar;
@@ -129,8 +130,8 @@ public class EmailReminderActivity extends Activity {
                         if(show_dialog_chk)dval="true";
 
 
-                        SmsReminder mr = new SmsReminder();
-                        mr.createSmsReminder(emailText.getText().toString(), emailAddress
+                        EmailReminder mr = new EmailReminder();
+                        mr.createEmailReminder(emailText.getText().toString(), emailAddress
                                         .getText().toString(), date.getText().toString(),
                                 time.getText().toString(),dval, EmailReminderActivity.this);
                         Toast.makeText(EmailReminderActivity.this,

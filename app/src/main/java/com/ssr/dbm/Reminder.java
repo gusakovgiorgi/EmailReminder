@@ -13,6 +13,9 @@ public final class Reminder implements Serializable {
 	private String phoneNum;
 	private String smstext;
 
+	private String emailtext;
+	private String emailaddress;
+
 	private String birthdayof;
 	private String AI;
 
@@ -116,6 +119,12 @@ public final class Reminder implements Serializable {
 	public void setPhoneNum(String phoneNum) {
 		this.phoneNum = phoneNum;
 	}
+	public void setEmailaddress(String emailaddress) {
+		this.emailaddress = emailaddress;
+	}
+    public String getEmailaddress(){
+        return emailaddress;
+    }
 
 	public String getSmstext() {
 		return smstext;
@@ -124,6 +133,12 @@ public final class Reminder implements Serializable {
 	public void setSmstext(String smstext) {
 		this.smstext = smstext;
 	}
+	public void setEmailtext(String emailtext) {
+		this.emailtext = emailtext;
+	}
+    public String getEmailtext(){
+        return emailtext;
+    }
 
 	public String getBirthdayof() {
 		return birthdayof;

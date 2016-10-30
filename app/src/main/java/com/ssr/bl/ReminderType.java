@@ -11,5 +11,6 @@ public interface ReminderType {
 	public final String LocationRem = "locationRem";
 	public final String AthleteRem = "athleteRem";
 	public final String BatteryRem = "batteryRem";
+	public final String EmailRem= "emailRem";
 
 }
