@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Oct 30 20:10:47 MSK 2016
+#Sun Oct 30 21:38:21 MSK 2016
 5.base=D\:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_8
 42.base=D\:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\resources-debug.ap_
 32.set=ANDROID_RESOURCE

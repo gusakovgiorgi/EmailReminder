@@ -40,12 +40,12 @@
         "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\creditsmain.xml"
     },
     {
-        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\genmain.xml",
-        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\genmain.xml"
-    },
-    {
         "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\athletemain.xml",
         "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\athletemain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\genmain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\genmain.xml"
     },
     {
         "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mapsmain.xml",

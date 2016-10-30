@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Oct 30 20:10:40 MSK 2016
+#Sun Oct 30 21:38:06 MSK 2016
 25.file=D\:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\gpsmain.xml
 25.base=D\:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\resources-debug.ap_
 22.set=ANDROID_RESOURCE

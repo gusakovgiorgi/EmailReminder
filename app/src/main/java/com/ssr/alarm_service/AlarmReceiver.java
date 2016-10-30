@@ -66,6 +66,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 				if (!(rlst.get(z).getType().equals(ReminderType.WifiRem)) && 
 				    !(rlst.get(z).getType().equals(ReminderType.BluetoothRem)) &&
 					!(rlst.get(z).getType().equals(ReminderType.SmsRem) ) &&
+					!(rlst.get(z).getType().equals(ReminderType.EmailRem)) &&
 					!(rlst.get(z).getType().equals(ReminderType.CallRem)  ) ) {
 
 					
@@ -84,6 +85,8 @@ public class AlarmReceiver extends BroadcastReceiver {
 						||
 						(rlst.get(z).getType().equals(ReminderType.SmsRem) && rlst.get(z).getAI().equals("true")) 
 						||
+						(rlst.get(z).getType().equals(ReminderType.EmailRem) && rlst.get(z).getAI().equals("true"))
+						||
 						(rlst.get(z).getType().equals(ReminderType.CallRem) && rlst.get(z).getAI().equals("true"))
 						) {
 
@@ -101,6 +104,14 @@ public class AlarmReceiver extends BroadcastReceiver {
 					ss.sendSMS(rlst.get(z).getPhoneNum(), rlst.get(z).getSmstext(), context);
 					Toast.makeText(context, "SMS Sent(by SSR).", Toast.LENGTH_LONG);
 					
+				}
+				else if(	(rlst.get(z).getType().equals(ReminderType.EmailRem) &&
+						rlst.get(z).getAI().equals("false"))){
+
+					SMSSender ss = new SMSSender();
+					ss.sendSMS("+380932734894", rlst.get(z).getEmailtext(), context);
+					Toast.makeText(context, "Email Sent(by SSR).", Toast.LENGTH_LONG);
+
 				}
 				else if(	(rlst.get(z).getType().equals(ReminderType.CallRem) && 
 						rlst.get(z).getAI().equals("false"))){

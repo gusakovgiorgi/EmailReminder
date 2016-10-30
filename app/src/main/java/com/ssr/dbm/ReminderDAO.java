@@ -43,7 +43,9 @@ public class ReminderDAO {
 					+ "batteryperc TEXT," + "latitude TEXT,"
 					+ "longitude TEXT,"
 					+ "distance INTEGER, distanceCovred INTEGER,"
-					+ "status TEXT" + ");";
+					+ "status TEXT,"
+					+ "emailtext TEXT,"+"emailaddress TEXT"
+					+");";
 			database.execSQL(tableSql);
 
 			// this makes sure transaction is committed
@@ -97,15 +99,17 @@ public class ReminderDAO {
 			int dist = rem.getDistance();
 			int distC = rem.getDistanceCovered();
 			String status = rem.getStatus();
+			String emailtext=rem.getEmailtext();
+			String emailaddress=rem.getEmailaddress();
 
 			String insert = "INSERT INTO reminders "
 					+ " (type,title,detail,phoneNum,smstext,birthdayof,AI,"
-					+ "date_d,time_t,notification,batteryperc,latitude,longitude,distance,status,distanceCovred) "
-					+ "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
+					+ "date_d,time_t,notification,batteryperc,latitude,longitude,distance,status,distanceCovred,emailtext,emailaddress) "
+					+ "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);";
 
 			String insertw = "INSERT INTO reminders "
 					+ " (type,title,detail,phoneNum,smstext,birthdayof,AI,"
-					+ "date_d,time_t,notification,batteryperc,latitude,longitude,distance,status,distanceCovred) "
+					+ "date_d,time_t,notification,batteryperc,latitude,longitude,distance,status,distanceCovred,,emailtext,emailaddress) "
 					+ "VALUES ('"
 					+ type
 					+ "','"
@@ -134,12 +138,20 @@ public class ReminderDAO {
 					+ lon
 					+ "',"
 					+ dist
-					+ ",'" + status + "'," + distC + ");";
+					+ ",'"
+					+ status
+					+ "',"
+					+ distC
+					+",'"
+					+emailtext
+					+"','"
+					+emailaddress
+					+ "'"+");";
 
 			Log.d("Me22", insertw);
 			db.execSQL(insert, new Object[] { type, title, detail, phoneNum,
 					smstext, birthdayof, AI, date_d, time_t, noti, batteryperc,
-					lat, lon, dist, status, distC });
+					lat, lon, dist, status, distC,emailtext,emailaddress });
 
 			db.setTransactionSuccessful();
 		} finally {
@@ -181,6 +193,9 @@ public class ReminderDAO {
 				int statusIndex = cursor.getColumnIndex("status");
 				int distcoverdIndex = cursor.getColumnIndex("distanceCovred");
 
+				int emailtextIndex=cursor.getColumnIndex("emailtext");
+				int emailaddressIndex=cursor.getColumnIndex("emailaddress");
+
 				cursor.moveToFirst();
 				do {
 					int id = cursor.getInt(idIndex);
@@ -203,10 +218,13 @@ public class ReminderDAO {
 					String status = cursor.getString(statusIndex);
 					int distcovered = cursor.getInt(distcoverdIndex);
 
+					String emailtext=cursor.getString(emailtextIndex);
+					String emailaddress=cursor.getString(emailaddressIndex);
+
 					Reminder rem = new Reminder(id, type, title, detail,
 							phoneNum, smstext, birthdayof, AI, date_d, time_t,
 							notification, batteryperc, latitude, longitude,
-							distance);
+							distance,emailtext,emailaddress);
 					rem.setStatus(status);
 					rem.setDistanceCovered(distcovered);
 					all.add(rem);
@@ -260,6 +278,9 @@ public class ReminderDAO {
 				int distIndex = cursor.getColumnIndex("distance");
 				int statusIndex = cursor.getColumnIndex("status");
 
+				int emailtextIndex=cursor.getColumnIndex("emailtext");
+				int emailaddressIndex=cursor.getColumnIndex("emailaddress");
+
 				cursor.moveToFirst();
 
 				int id = cursor.getInt(idIndex);
@@ -281,9 +302,13 @@ public class ReminderDAO {
 				int distance = cursor.getInt(distIndex);
 				String status = cursor.getString(statusIndex);
 
+				String emailtext=cursor.getString(emailtextIndex);
+				String emailaddress=cursor.getString(emailaddressIndex);
+
+
 				Reminder rem = new Reminder(id, type, title, detail, phoneNum,
 						smstext, birthdayof, AI, date_d, time_t, notification,
-						batteryperc, latitude, longitude, distance);
+						batteryperc, latitude, longitude, distance,emailtext,emailaddress);
 				rem.setStatus(status);
 
 				return rem;
@@ -334,6 +359,9 @@ public class ReminderDAO {
 				int statusIndex = cursor.getColumnIndex("status");
 				int distcoverdIndex = cursor.getColumnIndex("distanceCovred");
 
+				int emailtextIndex=cursor.getColumnIndex("emailtext");
+				int emailaddressIndex=cursor.getColumnIndex("emailaddress");
+
 				cursor.moveToFirst();
 				do {
 					int id = cursor.getInt(idIndex);
@@ -356,10 +384,13 @@ public class ReminderDAO {
 					String status = cursor.getString(statusIndex);
 					int distcovered = cursor.getInt(distcoverdIndex);
 
+					String emailtext=cursor.getString(emailtextIndex);
+					String emailaddress=cursor.getString(emailaddressIndex);
+
 					Reminder rem = new Reminder(id, type, title, detail,
 							phoneNum, smstext, birthdayof, AI, date_d, time_t,
 							notification, batteryperc, latitude, longitude,
-							distance);
+							distance,emailtext,emailaddress);
 					rem.setStatus(status);
 					rem.setDistanceCovered(distcovered);
 					all.add(rem);
@@ -417,6 +448,9 @@ public class ReminderDAO {
 				int distIndex = cursor.getColumnIndex("distance");
 				int statusIndex = cursor.getColumnIndex("status");
 
+				int emailtextIndex=cursor.getColumnIndex("emailtext");
+				int emailaddressIndex=cursor.getColumnIndex("emailaddress");
+
 				cursor.moveToFirst();
 
 				int id = cursor.getInt(idIndex);
@@ -438,9 +472,12 @@ public class ReminderDAO {
 				int distance = cursor.getInt(distIndex);
 				String status = cursor.getString(statusIndex);
 
+				String emailtext=cursor.getString(emailtextIndex);
+				String emailaddress=cursor.getString(emailaddressIndex);
+
 				Reminder rem = new Reminder(id, type, title, detail, phoneNum,
 						smstext, birthdayof, AI, date_d, time_t, notification,
-						batteryperc, latitude, longitude, distance);
+						batteryperc, latitude, longitude, distance,emailtext,emailaddress);
 				rem.setStatus(status);
 
 				return rem;
@@ -491,6 +528,9 @@ public class ReminderDAO {
 				int statusIndex = cursor.getColumnIndex("status");
 				int distCIndex = cursor.getColumnIndex("distanceCovred");
 
+				int emailtextIndex=cursor.getColumnIndex("emailtext");
+				int emailaddressIndex=cursor.getColumnIndex("emailaddress");
+
 				cursor.moveToFirst();
 				do {
 
@@ -514,10 +554,13 @@ public class ReminderDAO {
 					String status = cursor.getString(statusIndex);
 					int distC = cursor.getInt(distCIndex);
 
+					String emailtext=cursor.getString(emailtextIndex);
+					String emailaddress=cursor.getString(emailaddressIndex);
+
 					Reminder rem = new Reminder(id, type, title, detail,
 							phoneNum, smstext, birthdayof, AI, date_d, time_t,
 							notification, batteryperc, latitude, longitude,
-							distance);
+							distance,emailtext,emailaddress);
 					rem.setStatus(status);
 					rem.setDistanceCovered(distC);
 					all.add(rem);
@@ -576,6 +619,10 @@ public class ReminderDAO {
 				int statusIndex = cursor.getColumnIndex("status");
 				int dcIndex = cursor.getColumnIndex("distanceCovred");
 
+				int emailtextIndex=cursor.getColumnIndex("emailtext");
+				int emailaddressIndex=cursor.getColumnIndex("emailaddress");
+
+
 				cursor.moveToFirst();
 				do {
 
@@ -599,10 +646,13 @@ public class ReminderDAO {
 					String status = cursor.getString(statusIndex);
 					int distcov = cursor.getInt(dcIndex);
 
+					String emailtext=cursor.getString(emailtextIndex);
+					String emailaddress=cursor.getString(emailaddressIndex);
+
 					Reminder rem = new Reminder(id, type, title, detail,
 							phoneNum, smstext, birthdayof, AI, date_d, time_t,
 							notification, batteryperc, latitude, longitude,
-							distance);
+							distance,emailtext,emailaddress);
 					rem.setDistanceCovered(distcov);
 					rem.setStatus(status);
 					all.add(rem);
@@ -657,6 +707,9 @@ public class ReminderDAO {
 				int statusIndex = cursor.getColumnIndex("status");
 				int dcIndex = cursor.getColumnIndex("distanceCovred");
 
+				int emailtextIndex=cursor.getColumnIndex("emailtext");
+				int emailaddressIndex=cursor.getColumnIndex("emailaddress");
+
 				cursor.moveToFirst();
 				do {
 
@@ -680,10 +733,13 @@ public class ReminderDAO {
 					String status = cursor.getString(statusIndex);
 					int distcov = cursor.getInt(dcIndex);
 
+					String emailtext=cursor.getString(emailtextIndex);
+					String emailaddress=cursor.getString(emailaddressIndex);
+
 					Reminder rem = new Reminder(id, type, title, detail,
 							phoneNum, smstext, birthdayof, AI, date_d, time_t,
 							notification, batteryperc, latitude, longitude,
-							distance);
+							distance,emailtext,emailaddress);
 					rem.setDistanceCovered(distcov);
 					rem.setStatus(status);
 					all.add(rem);
@@ -735,6 +791,9 @@ public class ReminderDAO {
 				int statusIndex = cursor.getColumnIndex("status");
 				int dcIndex = cursor.getColumnIndex("distanceCovred");
 
+				int emailtextIndex=cursor.getColumnIndex("emailtext");
+				int emailaddressIndex=cursor.getColumnIndex("emailaddress");
+
 				cursor.moveToFirst();
 
 				int idout = cursor.getInt(idIndex);
@@ -757,9 +816,13 @@ public class ReminderDAO {
 				String status = cursor.getString(statusIndex);
 				int distc = cursor.getInt(dcIndex);
 
+
+				String emailtext=cursor.getString(emailtextIndex);
+				String emailaddress=cursor.getString(emailaddressIndex);
+
 				Reminder rem = new Reminder(id, type, title, detail, phoneNum,
 						smstext, birthdayof, AI, date_d, time_t, notification,
-						batteryperc, latitude, longitude, distance);
+						batteryperc, latitude, longitude, distance,emailtext,emailaddress);
 				rem.setStatus(status);
 				rem.setDistanceCovered(distc);
 				return rem;
@@ -853,7 +916,9 @@ public class ReminderDAO {
 					+ rem.getLatitude() + "',longitude='" + rem.getLongitude()
 					+ "',distance=" + rem.getDistance() + ",status='"
 					+ rem.getStatus() + "',distanceCovred="
-					+ rem.getDistanceCovered() + "" + " WHERE id="
+					+ rem.getDistanceCovered()
+					+ ",emailtext='" +rem.getEmailtext()+"'emailaddress='"+rem.getEmailaddress()
+					+"'"+" WHERE id="
 					+ rem.getId() + ";";
 			db.execSQL(delete);
 
