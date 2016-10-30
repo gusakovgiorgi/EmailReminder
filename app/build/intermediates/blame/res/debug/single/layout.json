@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\callmain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\callmain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\batterymain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\batterymain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\birthdaymain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\birthdaymain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bluetoothmain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\bluetoothmain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\smsmain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\smsmain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\viewremindersmain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\viewremindersmain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gpsmain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\gpsmain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialogmain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\dialogmain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\creditsmain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\creditsmain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\genmain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\genmain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\athletemain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\athletemain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mapsmain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\mapsmain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\wifimain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\wifimain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\meetingmain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\meetingmain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mainmenu.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\mainmenu.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\devicemain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\devicemain.xml"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\layout\\emailmain.xml",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\layout\\emailmain.xml"
+    }
+]

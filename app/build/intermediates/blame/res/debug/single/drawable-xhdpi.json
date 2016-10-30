@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\deviceremicon.png",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\drawable-xhdpi\\deviceremicon.png"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\userremicon.png",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\drawable-xhdpi\\userremicon.png"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\viewremicon.png",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\drawable-xhdpi\\viewremicon.png"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    }
+]

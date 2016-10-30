@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\apkStudio\Main-EclipseCode V3.2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="05c1b4cd120ddf1d1f99bc2f34c484f133724051">
+        <dex dex="D:\apkStudio\Main-EclipseCode V3.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0a0fb8d3ab833094255d870abec16a1e66242a6c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\apkStudio\Main-EclipseCode V3.2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="66cd942094716ff134848279e3414abdb668d2e7">
+        <dex dex="D:\apkStudio\Main-EclipseCode V3.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7047879d33c1d3c6674f3a8e0b797ac319b09132\classes.dex" />
+    </item>
+
+</items>

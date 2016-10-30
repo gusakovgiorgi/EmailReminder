@@ -1,0 +1,7 @@
+#Sun Oct 30 20:10:47 MSK 2016
+base.0=D\:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0a0fb8d3ab833094255d870abec16a1e66242a6c
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=D\:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_7047879d33c1d3c6674f3a8e0b797ac319b09132\\classes.dex
+base.1=D\:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_7047879d33c1d3c6674f3a8e0b797ac319b09132
+file.0=D\:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_0a0fb8d3ab833094255d870abec16a1e66242a6c\\classes.dex

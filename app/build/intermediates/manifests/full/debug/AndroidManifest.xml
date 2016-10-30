@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ssr.ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <uses-library
+            android:name="com.google.android.maps"
+            android:required="true" />
+
+        <activity
+            android:name="com.ssr.ui.SplitSecondReminderActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ssr.ui.DeviceRemActivity" >
+        </activity>
+        <activity android:name="com.ssr.ui.MeetingReminderActivity" >
+        </activity>
+
+        <receiver
+            android:name="com.ssr.alarm_service.AlarmReceiver"
+            android:process=":hascode_process" >
+        </receiver>
+
+        <activity android:name="com.ssr.ui.CallReminderActivity" />
+        <activity android:name="com.ssr.ui.SmsReminderActivity" />
+        <activity android:name="com.ssr.ui.BirthdayReminderActivity" />
+        <activity android:name="com.ssr.ui.GenReminderActivity" />
+        <activity android:name="com.ssr.ui.BatteryReminderActivity" >
+        </activity>
+        <activity android:name="com.ssr.ui.UIDialog" />
+        <activity android:name="com.ssr.ui.WifiReminderActivity" />
+        <activity android:name="com.ssr.ui.BluetoothReminderActivity" />
+        <activity android:name="com.ssr.ui.GPSReminderActivity" />
+        <activity android:name="com.ssr.ui.AthleteReminderActivity" />
+        <activity android:name="com.ssr.ui.ViewRemindersActivity" />
+        <activity android:name="com.ssr.ui.CreditsActivity" />
+
+        <receiver android:name="com.ssr.devicefunc.BatteryInformation" >
+        </receiver>
+
+        <service android:name="com.ssr.devicefunc.BatteryService" />
+
+        <activity android:name="com.ssr.ui.GMapsActivity" />
+        <activity android:name="com.ssr.ui.EditReminderActivity" />
+        <activity android:name="com.ssr.ui.EmailReminderActivity" />
+    </application>
+
+</manifest>

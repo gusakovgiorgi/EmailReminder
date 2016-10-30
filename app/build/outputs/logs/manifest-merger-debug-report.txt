@@ -1,0 +1,176 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:2:1-64:12
+	package
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:3:5-25
+		INJECTED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:7:5-43
+	android:targetSdkVersion
+		INJECTED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:7:15-40
+		INJECTED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml
+		INJECTED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.VIBRATE
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:8:5-65
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:8:22-63
+uses-permission#android.permission.CALL_PHONE
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:9:22-66
+uses-permission#android.permission.SEND_SMS
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:10:5-66
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:10:22-64
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:11:5-75
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:11:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:12:22-73
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:13:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:14:5-73
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:14:22-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:15:5-78
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:15:22-76
+uses-permission#android.permission.INTERNET
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:16:5-67
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:16:22-64
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:17:5-71
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:17:22-69
+application
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:19:5-62:19
+	android:label
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:21:9-41
+	android:icon
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:20:9-45
+uses-library#com.google.android.maps
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:24:9-87
+	android:required
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:24:62-85
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:24:23-61
+activity#com.ssr.ui.SplitSecondReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:27:9-35:20
+	android:label
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:29:13-45
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:28:13-56
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:30:13-34:29
+action#android.intent.action.MAIN
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:33:27-74
+activity#com.ssr.ui.DeviceRemActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:36:9-37:20
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:36:19-52
+activity#com.ssr.ui.MeetingReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:38:9-39:20
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:38:19-58
+receiver#com.ssr.alarm_service.AlarmReceiver
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:41:9-42:20
+	android:process
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:41:70-104
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:41:19-69
+activity#com.ssr.ui.CallReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:43:9-67
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:43:19-55
+activity#com.ssr.ui.SmsReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:44:9-66
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:44:19-54
+activity#com.ssr.ui.BirthdayReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:45:9-71
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:45:19-59
+activity#com.ssr.ui.GenReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:46:9-66
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:46:19-54
+activity#com.ssr.ui.BatteryReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:47:9-48:20
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:47:19-58
+activity#com.ssr.ui.UIDialog
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:49:9-55
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:49:19-43
+activity#com.ssr.ui.WifiReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:50:9-67
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:50:19-55
+activity#com.ssr.ui.BluetoothReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:51:9-72
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:51:19-60
+activity#com.ssr.ui.GPSReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:52:9-66
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:52:19-54
+activity#com.ssr.ui.AthleteReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:53:9-70
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:53:19-58
+activity#com.ssr.ui.ViewRemindersActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:54:9-68
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:54:19-56
+activity#com.ssr.ui.CreditsActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:55:9-62
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:55:19-50
+receiver#com.ssr.devicefunc.BatteryInformation
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:56:9-57:20
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:56:19-71
+service#com.ssr.devicefunc.BatteryService
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:58:9-77
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:58:18-66
+activity#com.ssr.ui.GMapsActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:59:9-60
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:59:19-48
+activity#com.ssr.ui.EditReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:60:9-67
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:60:19-55
+activity#com.ssr.ui.EmailReminderActivity
+ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:61:9-68
+	android:name
+		ADDED from D:\apkStudio\Main-EclipseCode V3.2\app\src\main\AndroidManifest.xml:61:19-56
