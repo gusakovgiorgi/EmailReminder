@@ -8,6 +8,7 @@ import com.ssr.dbm.Reminder;
 import com.ssr.dbm.ReminderDAO;
 import com.ssr.devicefunc.BluetoothManager;
 import com.ssr.devicefunc.CallDialer;
+import com.ssr.devicefunc.EmailSender;
 import com.ssr.devicefunc.SMSSender;
 import com.ssr.devicefunc.WiFiManager;
 import com.ssr.ui.MeetingReminderActivity;
@@ -108,8 +109,8 @@ public class AlarmReceiver extends BroadcastReceiver {
 				else if(	(rlst.get(z).getType().equals(ReminderType.EmailRem) &&
 						rlst.get(z).getAI().equals("false"))){
 
-					SMSSender ss = new SMSSender();
-					ss.sendSMS("+380932734894", rlst.get(z).getEmailtext(), context);
+					EmailSender ss = new EmailSender();
+					ss.sendEmail(rlst.get(z).getSubject(),rlst.get(z).getEmailaddress(), rlst.get(z).getEmailtext(), context);
 					Toast.makeText(context, "Email Sent(by SSR).", Toast.LENGTH_LONG);
 
 				}

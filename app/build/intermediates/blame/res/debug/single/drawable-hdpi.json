@@ -58,5 +58,9 @@
     {
         "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcheri.png",
         "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\drawable-hdpi\\ic_launcheri.png"
+    },
+    {
+        "merged": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\email_icon.png",
+        "source": "D:\\apkStudio\\Main-EclipseCode V3.2\\app\\src\\main\\res\\drawable-hdpi\\email_icon.png"
     }
 ]

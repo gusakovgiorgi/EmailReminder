@@ -16,7 +16,7 @@ import java.util.Locale;
  */
 
 public class EmailReminder {
-    public void createEmailReminder(String smstxt, String phoneNum, String date,
+    public void createEmailReminder(String subject,String smstxt, String phoneNum, String date,
                                   String time,String showDialog, Context con) {
 
         date = date.trim();
@@ -40,6 +40,7 @@ public class EmailReminder {
             rem.setDate(date);
             rem.setTime(time);
             rem.setAI(showDialog);
+            rem.setSubject(subject);
 
             // Toast.makeText(con, "d:"+date+" t:"+time ,
             // Toast.LENGTH_LONG).show();

@@ -111,12 +111,14 @@ public class EmailReminderActivity extends Activity {
                 EditText emailAddress = (EditText) findViewById(R.id.editText2);
                 EditText date = (EditText) findViewById(R.id.dateText3);
                 EditText time = (EditText) findViewById(R.id.timeText3);
+                EditText subject=(EditText)findViewById(R.id.editText6);
                 CheckBox chkbx = (CheckBox) findViewById(R.id.checkBox1);
 
                 if (emailText.getText().toString().equals("")
                         || emailAddress.getText().toString().equals("")
                         || date.getText().toString().equals("")
-                        || time.getText().toString().equals("")) {
+                        || time.getText().toString().equals("")
+                        || subject.getText().toString().equals("")) {
                     Toast.makeText(EmailReminderActivity.this, "Invalid Input",
                             Toast.LENGTH_SHORT).show();
                 } 	try {
@@ -131,7 +133,7 @@ public class EmailReminderActivity extends Activity {
 
 
                         EmailReminder mr = new EmailReminder();
-                        mr.createEmailReminder(emailText.getText().toString(), emailAddress
+                        mr.createEmailReminder(subject.getText().toString(),emailText.getText().toString(), emailAddress
                                         .getText().toString(), date.getText().toString(),
                                 time.getText().toString(),dval, EmailReminderActivity.this);
                         Toast.makeText(EmailReminderActivity.this,

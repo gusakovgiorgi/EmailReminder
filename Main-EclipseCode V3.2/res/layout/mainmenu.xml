@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" >
+
+    <item android:id="@+id/userrem" 
+        android:title="User Reminders"
+        android:icon="@drawable/userremicon"/>
+    
+    <item android:id="@+id/devicerem"
+        android:title="Device Reminders" 
+        android:icon="@drawable/deviceremicon"/>
+    
+    <item android:id="@+id/viewrem"
+        android:title="View Reminders" 
+        android:icon="@drawable/viewremicon"/>
+    
+      
+</menu>

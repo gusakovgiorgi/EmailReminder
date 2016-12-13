@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/bkgr" >
+
+		<ImageButton
+		    android:id="@+id/callRemBtn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginLeft="60dp"
+		    android:layout_marginTop="126dp"
+		    android:src="@drawable/call_icon" />
+
+		<ImageButton
+		    android:id="@+id/smsRemBtn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_alignTop="@+id/callRemBtn"
+		    android:layout_marginRight="73dp"
+		    android:src="@drawable/sms_icon" />
+
+		<ImageButton
+		    android:id="@+id/meetingRemBtn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/callRemBtn"
+		    android:layout_below="@+id/callRemBtn"
+		    android:layout_marginTop="60dp"
+		    android:src="@drawable/meeting_icon" />
+
+		<ImageButton
+		    android:id="@+id/birthdayRemBth"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@+id/meetingRemBtn"
+		    android:layout_alignLeft="@+id/smsRemBtn"
+		    android:src="@drawable/birthday_icon" />
+
+		<ImageButton
+		    android:id="@+id/genRemBtn"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignRight="@+id/meetingRemBtn"
+		    android:layout_below="@+id/meetingRemBtn"
+		    android:layout_marginTop="58dp"
+		    android:src="@drawable/general_icon" />
+
+    </RelativeLayout>
+
+</LinearLayout>

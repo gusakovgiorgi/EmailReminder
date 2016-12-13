@@ -7,6 +7,7 @@ import com.ssr.bl.ReminderType;
 import com.ssr.dbm.Reminder;
 import com.ssr.devicefunc.BluetoothManager;
 import com.ssr.devicefunc.CallDialer;
+import com.ssr.devicefunc.EmailSender;
 import com.ssr.devicefunc.SMSSender;
 import com.ssr.devicefunc.WiFiManager;
 
@@ -91,7 +92,13 @@ public class UIDialog extends Activity {
 			message = "SMS Reminder. Do you want to send '" + rem.getSmstext()
 					+ "' to " + rem.getPhoneNum() + "?";
 
-		} else if (rem.getType().equals(ReminderType.WifiRem)) {
+		}else if (rem.getType().equals(ReminderType.EmailRem)) {
+			builder.setIcon(R.drawable.email_icon);
+			builder.setTitle("Email Reminder!!!");
+			message = "SMS Reminder. Do you want to send email with subject: " + rem.getSubject()+"\n"
+					+ "text:"+rem.getEmailtext()+"\n to " + rem.getEmailaddress() + "?";
+
+		}  else if (rem.getType().equals(ReminderType.WifiRem)) {
 			builder.setIcon(R.drawable.wifi_icon);
 			builder.setTitle("Wifi Reminder!!!");
 			message = "Wifi Reminder. Do you want to turnoff Wifi radio?";
@@ -129,6 +136,10 @@ public class UIDialog extends Activity {
 					SMSSender ss = new SMSSender();
 					ss.sendSMS(rem1.getPhoneNum(), rem1.getSmstext(), context);
 					Toast.makeText(context, "SMS Sent.", Toast.LENGTH_LONG);
+				}else if (rem1.getType().equals(ReminderType.EmailRem)) {
+					EmailSender em=new EmailSender();
+					em.sendEmail(rem1.getSubject(),rem1.getEmailaddress(), rem1.getEmailtext(), context);
+					Toast.makeText(context, "Email Sent.", Toast.LENGTH_LONG);
 				} else if (rem1.getType().equals(ReminderType.CallRem)) {
 					CallDialer cr = new CallDialer();
 					cr.dial(rem1.getPhoneNum(), context);
@@ -147,7 +158,8 @@ public class UIDialog extends Activity {
 		});
 
 		if (rem.getType().equals(ReminderType.CallRem)
-				|| rem.getType().equals(ReminderType.SmsRem)) {
+				|| rem.getType().equals(ReminderType.SmsRem)
+				|| rem.getType().equals(ReminderType.EmailRem)) {
 
 			builder.setNegativeButton("Cancel",
 					new DialogInterface.OnClickListener() {

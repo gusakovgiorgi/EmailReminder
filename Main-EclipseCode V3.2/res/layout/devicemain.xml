@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bkgr" >
+
+        <ImageButton
+            android:id="@+id/batteryRemBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="46dp"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/battery_icon" />
+
+        <ImageButton
+            android:id="@+id/wifiRemBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/batteryRemBtn"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="54dp"
+            android:src="@drawable/wifi_icon" />
+
+        <ImageButton
+            android:id="@+id/bluetoothRemBth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/batteryRemBtn"
+            android:layout_below="@+id/batteryRemBtn"
+            android:layout_marginTop="88dp"
+            android:src="@drawable/bluetooth_icon" />
+
+        <ImageButton
+            android:id="@+id/gpsRemBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/wifiRemBtn"
+            android:layout_alignTop="@+id/bluetoothRemBth"
+            android:src="@drawable/athelete_icon" />
+
+        <ImageButton
+            android:id="@+id/athRemBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bluetoothRemBth"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="76dp"
+            android:src="@drawable/athelete2_icon" />
+
+    </RelativeLayout>
+
+</LinearLayout>

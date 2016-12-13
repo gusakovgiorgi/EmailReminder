@@ -61,7 +61,7 @@
 			android:layout_alignRight="@+id/birthdayRemBth"
 			android:layout_below="@+id/birthdayRemBth"
 			android:layout_marginTop="58dp"
-			android:src="@drawable/general_icon" />
+			android:src="@drawable/email_icon" />
 
     </RelativeLayout>
 

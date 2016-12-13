@@ -13,6 +13,7 @@ public final class Reminder implements Serializable {
 	private String phoneNum;
 	private String smstext;
 
+	private String subject;
 	private String emailtext;
 	private String emailaddress;
 
@@ -60,7 +61,7 @@ public final class Reminder implements Serializable {
 	public Reminder(int id, String type, String title, String detail,
 			String phoneNum, String smstext, String birthdayof, String aI,
 			String date, String time, String notification, String batteryperc,
-			String latitude, String longitude, int distance,String emailtext,String emailaddress) {
+			String latitude, String longitude, int distance,String emailtext,String emailaddress,String subject) {
 
 		super();
 		this.id = id;
@@ -80,6 +81,7 @@ public final class Reminder implements Serializable {
 		this.distance = distance;
         this.emailtext=emailtext;
         this.emailaddress=emailaddress;
+		this.subject=subject;
 	}
 
 	public int getId() {
@@ -127,6 +129,15 @@ public final class Reminder implements Serializable {
     public String getEmailaddress(){
         return emailaddress;
     }
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
 
 	public String getSmstext() {
 		return smstext;
